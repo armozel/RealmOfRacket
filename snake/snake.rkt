@@ -11,9 +11,10 @@
 (define SEG-IMG (bitmap "art/snake_body.png"))
 (define GOO-IMG (bitmap "art/goo.png"))
 (define HEAD-LEFT-IMG HEAD-IMG)
+(define HEAD-DOWN-IMG  (rotate 90 HEAD-LEFT-IMG))
 (define HEAD-RIGHT-IMG (flip-horizontal HEAD-LEFT-IMG))
-(define HEAD-UP-IMG (rotate 90 HEAD-LEFT-IMG))
-(define HEAD-DOWN-IMG (flip-vertical HEAD-UP-IMG))
+(define HEAD-UP-IMG (flip-vertical HEAD-DOWN-IMG))
+
 
 (define (text/menlo s color size) (text/font s color size "Menlo" 'script 'normal 'normal #f))
 
