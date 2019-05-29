@@ -1,4 +1,0 @@
-#lang racket
-
-
-(struct pit (snake goos) #:transparent)
